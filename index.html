@@ -1,21 +1,159 @@
 <!DOCTYPE html>
 <html lang="de">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport"
-content="width=device-width,
-initial-scale=1.0">
-<title>Aruny Wellnessmassage</title>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arunya Wellnessmassage</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fafafa;
+      color: #4B3A2F;
+      line-height: 1.7;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #4B3A2F;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .main-nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      flex-wrap: wrap;
+    }
+
+    .main-nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      transition: color 0.3s ease;
+    }
+
+    .main-nav a:hover {
+      color: #FFD700;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 30px;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    }
+
+    .ueber-mich {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .ueber-mich img {
+      max-width: 300px;
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .ueber-mich .text {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    footer {
+      background-color: #4B3A2F;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: auto;
+    }
+
+    .social-media {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 10px;
+    }
+
+    .social-media a {
+      color: white;
+      font-size: 24px;
+      transition: color 0.3s ease;
+    }
+
+    .social-media a:hover {
+      color: #FFD700;
+    }
+
+    @media (max-width: 768px) {
+      .main-nav ul {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .main-nav a {
+        font-size: 1em;
+      }
+
+      section {
+        padding: 20px;
+      }
+
+      header h1 {
+        font-size: 1.8em;
+      }
+
+      .ueber-mich {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .ueber-mich .text {
+        text-align: left;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.5em;
+      }
+
+      .social-media a {
+        font-size: 20px;
+      }
+
+      section h2 {
+        font-size: 1.2em;
+      }
+
+      section p, section li {
+        font-size: 0.95em;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
 <header>
-<h1>Arunya Wellnessmassage</h1>
-<nav class="main-nav">
+  <h1>Arunya Wellnessmassage</h1>
+  <nav class="main-nav">
     <ul>
       <li><a href="galerie.html">Galerie</a></li>
       <li><a href="impressum.html">Impressum</a></li>
@@ -24,60 +162,45 @@ initial-scale=1.0">
   </nav>
 </header>
 
-<section id="ueber-mich"
-class="ueber-mich">
-<img src="Über_mich.jpg" alt="Karin Ardemani">
-
-<div class="text">
-<h2>Über mich</h2>
-
-<h4>Herzlich Willkommen bei Karin Ardemani - Ihrem Ort der Ruhe und Entspannung</h4>
-<p>In einer hektischen Welt braucht es Momente der Stille. In meinem liebevoll gestalteten
-<strong>Raum mit seperaten Eingang</strong> finden Sie einen geschützten Ort, an dem Sie einfach loslassen dürfen.</p>
-
-
-<h4>Meine Massagen sind mehr als Berührung - sie sind eine verständnisvolle Begegnung.</h4>
-<p>Mit Empathie, Achtsamkeit und Zeit für Sie stimme Ich jede Behandlung individuell auf Ihre Bedürfnisse ab.</p>
-
-
-<h4>Meine Angebote für Ihr Wohlbefinden</h4>
-<ul>
-    <li>Gesichtsmassage - für frische Ausstrahlung und Tiefenentspannung</li>
-    <li>Fußmassage - für neue Leichtigkeit und Erdung</li>
-    <li>Rückenmassage mit hochwertigen Aromaölen - löst Verspannungen und schenkt neue Energie</li>
-    <li>Ganzkörpermassage mit naturreinen Aromaölen - für tiefgreifende Entspannung und spürbares Wohlbefinden</li>
-</ul>
-
-
-<h4>Ein Ausgleich zur hektischen Zeit - lassen Sie los, was Sie belastet, und finden Sie zurück zu sich selbst</h4>
-<p><strong>Termine flexibel buchbar.</strong></p>
-<ul>
-    <li>Wochentags von 14:00 bis 20:30 Uhr</li>
-    <li>Auch Samstags möglich - nach Vereinbarung</li>
-</ul>
-
-
-<p><strong>Preise</strong></p>
-<ul>
-    <li>30 Minuten - 30&euro;</li>
-    <li>40 Minuten - 40&euro;</li>
-    <li>60 Minuten - 58&euro;</li>
-    <li>90 Minuten - 80&euro;</li>
-</ul>
- 
-</div>
+<section id="ueber-mich" class="ueber-mich">
+  <img src="Über_mich.jpg" alt="Karin Ardemani">
+  <div class="text">
+    <h2>Über mich</h2>
+    <h4>Herzlich Willkommen bei Karin Ardemani – Ihrem Ort der Ruhe und Entspannung</h4>
+    <p>In einer hektischen Welt braucht es Momente der Stille. In meinem liebevoll gestalteten <strong>Raum mit separatem Eingang</strong> finden Sie einen geschützten Ort, an dem Sie einfach loslassen dürfen.</p>
+    <h4>Meine Massagen sind mehr als Berührung – sie sind eine verständnisvolle Begegnung.</h4>
+    <p>Mit Empathie, Achtsamkeit und Zeit für Sie stimme ich jede Behandlung individuell auf Ihre Bedürfnisse ab.</p>
+    <h4>Meine Angebote für Ihr Wohlbefinden</h4>
+    <ul>
+      <li>Gesichtsmassage – für frische Ausstrahlung und Tiefenentspannung</li>
+      <li>Fußmassage – für neue Leichtigkeit und Erdung</li>
+      <li>Rückenmassage mit hochwertigen Aromaölen – löst Verspannungen und schenkt neue Energie</li>
+      <li>Ganzkörpermassage mit naturreinen Aromaölen – für tiefgreifende Entspannung und spürbares Wohlbefinden</li>
+    </ul>
+    <h4>Ein Ausgleich zur hektischen Zeit – lassen Sie los, was Sie belastet, und finden Sie zurück zu sich selbst</h4>
+    <p><strong>Termine flexibel buchbar.</strong></p>
+    <ul>
+      <li>Wochentags von 14:00 bis 20:30 Uhr</li>
+      <li>Auch Samstags möglich – nach Vereinbarung</li>
+    </ul>
+    <p><strong>Preise</strong></p>
+    <ul>
+      <li>30 Minuten – 30 €</li>
+      <li>40 Minuten – 40 €</li>
+      <li>60 Minuten – 58 €</li>
+      <li>90 Minuten – 80 €</li>
+    </ul>
+  </div>
 </section>
-
 
 <section id="anfahrt">
-<h2>Anfahrt</h2>
-<p>Meine Praxis befindet sich in Wangen/Deuchelried.Parkplätze sind direkt vor Ort verfügbar.</p>
-<p><strong>Adresse:</strong> Endesbach 11,88239 Wangen/Deuchelried</p>
+  <h2>Anfahrt</h2>
+  <p>Meine Praxis befindet sich in Wangen/Deuchelried. Parkplätze sind direkt vor Ort verfügbar.</p>
+  <p><strong>Adresse:</strong> Endesbach 11, 88239 Wangen/Deuchelried</p>
 </section>
 
-
 <footer>
-<div class="social-media">
+  <div class="social-media">
     <a href="https://www.instagram.com/karinardemani/" target="_blank"><i class="fab fa-instagram"></i></a>
     <a href="https://www.facebook.com/profile.php?id=100004357953269" target="_blank"><i class="fab fa-facebook-f"></i></a>
     <a href="https://wa.me/4915152431034" target="_blank"><i class="fab fa-whatsapp"></i></a>
